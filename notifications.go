@@ -45,6 +45,7 @@ type NotificationRequest struct {
 	ExcludedSegments       []string          `json:"excluded_segments,omitempty"`
 	IncludePlayerIDs       []string          `json:"include_player_ids,omitempty"`
 	IncludeExtPlayerIDs    []string          `json:"include_external_user_ids,omitempty"`
+	ChannelForExtUserIds   string            `json:"channel_for_ext_user_ids,omitempty"`
 	IncludeIOSTokens       []string          `json:"include_ios_tokens,omitempty"`
 	IncludeAndroidRegIDs   []string          `json:"include_android_reg_ids,omitempty"`
 	IncludeWPURIs          []string          `json:"include_wp_uris,omitempty"`
@@ -53,6 +54,7 @@ type NotificationRequest struct {
 	IncludeChromeRegIDs    []string          `json:"include_chrome_reg_ids,omitempty"`
 	IncludeChromeWebRegIDs []string          `json:"include_chrome_web_reg_ids,omitempty"`
 	AppIDs                 []string          `json:"app_ids,omitempty"`
+
 	Tags                   interface{}       `json:"tags,omitempty"`
 	IOSBadgeType           string            `json:"ios_badgeType,omitempty"`
 	IOSBadgeCount          int               `json:"ios_badgeCount,omitempty"`
