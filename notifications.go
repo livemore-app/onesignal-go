@@ -45,7 +45,7 @@ type NotificationRequest struct {
 	ExcludedSegments       []string          `json:"excluded_segments,omitempty"`
 	IncludePlayerIDs       []string          `json:"include_player_ids,omitempty"`
 	IncludeExtPlayerIDs    []string          `json:"include_external_user_ids,omitempty"`
-	ChannelForExtUserIds   string            `json:"channel_for_ext_user_ids,omitempty"`
+	ChannelForExtUserIds   string            `json:"channel_for_external_user_ids,omitempty"`
 	IncludeIOSTokens       []string          `json:"include_ios_tokens,omitempty"`
 	IncludeAndroidRegIDs   []string          `json:"include_android_reg_ids,omitempty"`
 	IncludeWPURIs          []string          `json:"include_wp_uris,omitempty"`
