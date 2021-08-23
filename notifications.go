@@ -54,7 +54,7 @@ type NotificationRequest struct {
 	IncludeChromeRegIDs    []string          `json:"include_chrome_reg_ids,omitempty"`
 	IncludeChromeWebRegIDs []string          `json:"include_chrome_web_reg_ids,omitempty"`
 	AppIDs                 []string          `json:"app_ids,omitempty"`
-
+	CollapseId             string            `json:"collapse_id"`
 	Tags                   interface{}       `json:"tags,omitempty"`
 	IOSBadgeType           string            `json:"ios_badgeType,omitempty"`
 	IOSBadgeCount          int               `json:"ios_badgeCount,omitempty"`
